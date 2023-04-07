@@ -1,0 +1,41 @@
+1- CREATE TABLE employee (
+        id INTEGER PRIMARY KEY,
+        name VARCHAR(50) NOT NULL,
+        birthday DATE,
+        email VARCHAR(50)
+   );
+   
+    
+ 3- UPDATE employee
+    SET name='Mary'
+    WHERE id=2
+    RETURNING * ;
+    
+    UPDATE employee
+    SET name='John'
+        birthday='1989.09.09'
+    WHERE id=20
+    RETURNING * ;
+    
+    UPDATE employee
+    SET name='Johnson'
+    WHERE id=50
+    RETURNING * ;
+    
+    UPDATE employee
+    SET email='sera@sera.com'
+    WHERE id=33
+    RETURNING * ;
+    
+    UPDATE employee
+    SET name='Wednesday'
+    WHERE id=13
+    RETURNING * ;
+    
+    
+4-  
+     DELETE FROM employee
+     WHERE id=6
+     RETURNING*;
+    
+    
